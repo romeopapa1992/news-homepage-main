@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.top-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-content img {
+    width: 100%;
+}
+
+main {
+    margin: 2rem 8rem;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+}
+
+h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  padding-right: 3rem;
+}
+
+p {
+  line-height: 1.8;
+  color: hsl(236, 13%, 42%);
+}
+
+.lead {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+button {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-top: auto;
+}
+
+.recent-news {
+  background-color: hsl(240, 100%, 5%);
+  padding: 20px;
+}
+
+.recent-news h2 {
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 1.5rem;
+}
+
+.theme {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    margin-top: 30px;
+}
+
+.recent-news h3 {
+    color: hsl(36, 100%, 99%);
+    margin-bottom: 1rem;
+}
+
+hr {
+    background-color: hsl(236, 13%, 42%);;
+    border: none;
+    height: .1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.report h2 {
+    color: hsl(236, 13%, 42%);
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.report h3 {
+    color: hsl(240, 100%, 5%);
+    margin-bottom: 12px;
+}
+
+.bottom-news img {
+    width: 140px;
+    margin-right: 12px;
+}
+
+.bottom-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    gap: 20px;
+}
+
+.bottom-news article {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
