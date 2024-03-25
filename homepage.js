@@ -1,21 +1,18 @@
-const navbar = document.querySelector("nav");
-const openMenu = document.getElementById("menu-button");
-const closeMenu = document.getElementById("close-button");
-const body = document.body;
-
-openMenu.addEventListener("click", () => {
- navbar.classList.add("open");
- body.classList.add("overlay");
-});
-
-closeMenu.addEventListener("click", () => {
- navbar.classList.remove("open");
- body.classList.remove("overlay"); 
-});
-
-window.addEventListener("resize", () => {
- if (window.innerWidth > 768) {
-  navbar.classList.remove("open");
-  body.classList.remove("overlay");
- }
-});
+$(document).ready(function() {
+    $("#menu-button").click(function() {
+      $("nav").addClass("open");
+      $("body").addClass("overlay");
+    });
+  
+    $("#close-button").click(function() {
+      $("nav").removeClass("open");
+      $("body").removeClass("overlay");
+    });
+  
+    $(window).resize(function() {
+      if ($(window).width() > 768) {
+        $("nav").removeClass("open");
+        $("body").removeClass("overlay");
+      }
+    });
+  });
