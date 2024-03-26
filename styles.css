@@ -37,12 +37,13 @@ li {
   margin-left: 20px;
 }
 
-.report h3:hover, 
+.report a:hover, 
 nav a:hover {
   color: hsl(5, 85%, 63%);
   cursor: pointer;
 }
 
+.report a,
 nav a {
   text-decoration: none; 
   color: black; 
@@ -146,16 +147,21 @@ p {
 .recent-news h2 {
   color: hsl(35, 77%, 62%);
   margin-bottom: 1.5rem;
+  font-size: 2.3rem;
 }
 
-.recent-news h3 {
+.recent-news a {
   color: hsl(36, 100%, 99%);
-  margin-bottom: 1rem;
+  text-decoration: none; 
 }
 
-.recent-news h3:hover {
+.recent-news a:hover {
   color: hsl(35, 77%, 62%);
   cursor: pointer;
+}
+
+.recent-news p {
+  margin-top: 10px;
 }
 
 .theme {
